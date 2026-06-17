@@ -88,9 +88,6 @@ function calcular(){
             </p>
 
             <h3>${mensaje}</h3>
-            document.querySelectorAll('input[type="number"]').forEach(input => {
-
-        input.addEventListener("wheel", function(e){
 
         e.target.blur();
 
