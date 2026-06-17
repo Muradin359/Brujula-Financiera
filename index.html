@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brújula Financiera</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🧭 Brújula Financiera</h1>
+
+        <p class="descripcion">
+            Descubre cuánto dinero tienes realmente disponible cada mes.
+        </p>
+
+        <div class="card">
+
+            <h2>Ingresos</h2>
+
+        <label>Ingresos mensuales totales</label>
+        <input
+            type="text"
+            id="ingresos"
+            inputmode="numeric"
+            autocomplete="off"
+            placeholder="0">
+
+            <h2>Gastos básicos</h2>
+
+<label>Arriendo + gasto común</label>
+    <input
+        type="text"
+        id="arriendo"
+        inputmode="numeric"
+        autocomplete="off"
+        placeholder="0">
+
+    <label>Servicios básicos</label>
+    <input
+        type="text"
+        id="servicios"
+        inputmode="numeric"
+        autocomplete="off"
+        placeholder="0">
+
+    <label>Alimentación</label>
+    <input
+        type="text"
+        id="alimentacion"
+        inputmode="numeric"
+        autocomplete="off"
+        placeholder="0">
+
+    <label>Transporte</label>
+    <input
+        type="text"
+        id="transporte"
+        inputmode="numeric"
+        autocomplete="off"
+        placeholder="0">
+
+    <label>Deuda mensual</label>
+    <input
+        type="text"
+        id="deuda"
+        inputmode="numeric"
+        autocomplete="off"
+        placeholder="0">
+
+    <label>Otros gastos</label>
+    <input
+        type="text"
+        id="otros"
+        inputmode="numeric"
+        autocomplete="off"
+        placeholder="0">
+            <h2>Gastos Extra</h2>
+
+
+            <button onclick="calcular()">
+                Calcular
+            </button>
+
+        </div>
+
+        <div class="resultado" id="resultado">
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
