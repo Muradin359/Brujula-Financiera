@@ -6,7 +6,7 @@ body{
 }
 
 .container{
-    max-width:800px;
+    max-width:650px;
     margin:auto;
 }
 
@@ -32,17 +32,141 @@ button{
 }
 
 .resultado{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.barra-item{
+
+    margin-top:18px;
+
+}
+
+.barra-item span{
+
+    display:block;
+
+    font-weight:bold;
+
+    margin-bottom:6px;
+
+}
+
+.barra{
+
+    width:100%;
+    max-width:500px;
+
+    height:18px;
+
+    background:#e8e8e8;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.relleno{
+
+    height:100%;
+
+    width:0;
+
+    transition:width .8s ease;
+
+}
+
+.basicos{
+
+    background:#2980b9;
+
+}
+
+.deuda{
+
+    background:#f39c12;
+
+}
+
+.otros{
+
+    background:#c0392b;
+
+}
+
+.libre{
+
+    background:#27ae60;
+
+}
+/* ============================= */
+/* Encuesta */
+/* ============================= */
+
+.encuesta{
+
+    margin-top:40px;
+
+    width:100%;
+
+    max-width:650px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+.encuesta label{
+
+    display:block;
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+.encuesta input,
+.encuesta select,
+.encuesta textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    box-sizing:border-box;
+
+}
+
+.encuesta textarea{
+
+    resize:vertical;
+
+    min-height:120px;
+
+}
+
+.encuesta button{
+
     margin-top:20px;
-}
 
-/* Chrome, Edge, Safari */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button{
-    -webkit-appearance: none;
-    margin:0;
-}
+    width:100%;
 
-/* Firefox */
-input[type=number]{
-    -moz-appearance:textfield;
 }

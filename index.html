@@ -97,5 +97,94 @@
 
     <script src="script.js"></script>
 
+<div class="card encuesta">
+
+    <h2>📝 Ayúdanos a mejorar</h2>
+
+    <p class="descripcion">
+        Esta versión es un prototipo de Brújula Financiera.
+        Tu opinión nos ayudará a construir una mejor herramienta.
+    </p>
+
+    <label for="nombre">
+        Tu nombre o alias
+    </label>
+
+    <input
+        type="text"
+        id="nombre"
+        placeholder="">
+
+    <label for="utilidad">
+        ¿Te fue útil esta evaluación?
+    </label>
+
+    <select id="utilidad">
+
+        <option value="">Selecciona una opción</option>
+        <option>Sí, bastante</option>
+        <option>Más o menos</option>
+        <option>No</option>
+
+    </select>
+
+    <label for="usaria">
+        ¿Utilizarías Brújula Financiera?
+    </label>
+
+    <select id="usaria">
+
+        <option value="">Selecciona una opción</option>
+        <option>Sí</option>
+        <option>Tal vez</option>
+        <option>No</option>
+
+    </select>
+
+    <label for="precio">
+        ¿Cuánto estarías dispuesto a pagar al mes?
+    </label>
+
+    <select id="precio">
+
+        <option value="">Selecciona una opción</option>
+        <option>No pagaría</option>
+        <option>Hasta $2.000</option>
+        <option>Entre $2.000 y $4.000</option>
+        <option>Más de $4.000</option>
+
+    </select>
+
+    <label for="funcion">
+        ¿Qué función te gustaría más?
+    </label>
+
+    <select id="funcion">
+
+        <option value="">Selecciona una opción</option>
+        <option>Registro mensual</option>
+        <option>Gráficos</option>
+        <option>Control de créditos</option>
+        <option>Metas de ahorro</option>
+        <option>Exportar a Excel</option>
+
+    </select>
+
+    <label for="comentario">
+        ¿Qué mejorarías?
+    </label>
+
+    <textarea
+        id="comentario"
+        rows="5"
+        placeholder="Escribe aquí cualquier sugerencia..."></textarea>
+
+    <button onclick="enviarEncuesta()">
+
+        Enviar opinión
+
+    </button>
+
+</div>
 </body>
 </html>
