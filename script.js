@@ -346,13 +346,18 @@ async function enviarEncuesta(){
         }
 
     }
-    catch(error){
+catch(error){
 
-        console.error(error);
+    console.error(error);
 
-        alert("No fue posible conectar con el servidor.");
+    alert(
+        "Error:\n\n" +
+        error.name +
+        "\n\n" +
+        error.message
+    );
 
-    }
+}
 
     boton.disabled = false;
 
