@@ -307,18 +307,13 @@ async function enviarEncuesta(){
     boton.textContent = "Enviando...";
 
     try{
+            const params = new URLSearchParams(datos);
 
-        const respuesta = await fetch("https://script.google.com/macros/s/AKfycbzTBCQr6emOdcYck-LnDnW8BFzCA5YVwYHeU6PcMiTCRWnQ0CBtPUzM7ZQBfrmmBEoK9w/exec",{
+            fetch("https://script.google.com/macros/s/AKfycbzTBCQr6emOdcYck-LnDnW8BFzCA5YVwYHeU6PcMiTCRWnQ0CBtPUzM7ZQBfrmmBEoK9w/exec",{
+                method:"POST",
+                body:params
+            });
 
-            method:"POST",
-
-            headers:{
-                "Content-Type":"application/json"
-            },
-
-            body:JSON.stringify(datos)
-
-        });
 
         const resultado = await respuesta.json();
 
